@@ -36,7 +36,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
     
-    server.login("ping2ankush@gmail.com","rsrjztuxpckntfeq")
+    server.login("username","password")
     
     subject = "Hey price fell down!"
     body = "check the links 1. https://www.flipkart.com/apple-macbook-air-core-i5-5th-gen-8-gb-128-gb-ssd-mac-os-sierra-mqd32hn-a-a1466/p/itmevcpqqhf6azn3?pid=COMEVCPQBXBDFJ8C&srno=s_1_1&otracker=search&otracker1=search&lid=LSTCOMEVCPQBXBDFJ8C4V6AHG&fm=SEARCH&iid=4b8a9f30-d996-469c-a53e-259e9fc36b0b.COMEVCPQBXBDFJ8C.SEARCH&ppt=sp&ppn=sp&ssid=ynzx47x2bk0000001567944559688&qH=312f91285e048e09,2. https://www.amazon.in/Apple-MacBook-Air-13-3-inch-MQD32HN/dp/B073Q5R6VR/ref=sr_1_1?keywords=laptops&qid=1567944491&refinements=p_89%3AApple&rnid=3837712031&s=gateway&sr=8-1"
@@ -44,8 +44,8 @@ def send_mail():
     msg = f"Subject : {subject}\n\n{body}"
     
     server.sendmail(
-        "ping2ankush@gmail.com",
-        "ping2ankush@gmail.com",
+        "from",
+        "to",
         msg
     )
     
